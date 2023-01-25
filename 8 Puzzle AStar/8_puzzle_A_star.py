@@ -77,7 +77,7 @@ class Puzzle:
         start = Node(start,0,0)
         start.fval = self.f(start,goal)
         self.open.append(start)
-        print("\n\n")
+        
         while True:
             cur = self.open[0]
             print("")

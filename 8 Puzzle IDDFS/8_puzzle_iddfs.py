@@ -1,4 +1,4 @@
-#https://gist.github.com/danong/96e0ffa0fcb06c459787
+
 import itertools
 import random
 import time
@@ -55,8 +55,8 @@ if __name__ == '__main__':
     reps = 25
     total_time = 0
     for i in range(reps):
-        # puzzle = [[1,2,3],[5,6,0],[7,8,4]]
-        # goal = [[1,2,3],[5,8,6],[0,7,4]]
+        puzzle = [[1,2,3],[4,0,6],[7,5,8]]
+        goal = [[1,2,3],[4,5,6],[7,8,0]]
         puzzle,goal = num_matrix(3,3)
         t0 = time.time()
         solution = id_dfs(puzzle, goal, num_moves(3, 3))
